@@ -1,6 +1,104 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../Fonts/source-sans-pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro Semibold";
+    src: url(../Fonts/source-sans-pro/SourceSansPro-Semibold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../Fonts/Roboto/static/Roboto-Bold.ttf)
+}
+
 html, 
 body {
     margin: 0;
     padding: 0;
-    background-color: red;
+    font-family: "Source Sans Pro";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75em;
+}
+
+
+
+/***************************************************
+****************************************************
+****************************************************/
+                /* NAVIGATION */
+/****************************************************
+*****************************************************
+*****************************************************/
+
+.nav {
+    max-width: 90%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: min-content auto 1fr min-content auto;
+    grid-template-areas: "logo title . home about-me";
+    align-items: center;
+    gap: 0.25em;
+    font-family: "Source Sans Pro Semibold", serif;
+}
+
+
+.nav-left-logo {
+    grid-area: logo;
+}
+
+.nav-left-title {
+    grid-area: title;
+    font-family: "Roboto Bold", "Source Sans Pro Semibold", serif;
+    font-size: 0.9em;
+}
+
+.nav-right-home {
+    grid-area: home;
+    
+}
+
+.nav-right-about-me {
+    grid-area: about-me;
+}
+
+.mr {
+    margin-right: 1em;
+}
+
+/***************************************************
+****************************************************
+****************************************************/
+                    /* MAIN */
+/****************************************************
+*****************************************************
+*****************************************************/
+
+.main-article {
+ background-image: url(../images/article-image-hero.png);
+    
+    /* 👇 Key change: Set dimensions using viewport units */
+    width: 100%;       /* 100% of the parent width (the main tag) */
+    height: 70%;      /* 70% of the viewport height */
+    
+    /* Ensure the full image fits without cropping */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    /* For content positioning */
+    position: relative; /* Essential for absolute text positioning */
+    color: white;
+}
+
+span {
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
