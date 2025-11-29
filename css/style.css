@@ -157,3 +157,33 @@ h1, h3, p {
     color: #141414;
     font-weight: 900;
 }
+
+
+.view-more {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    font-size: 1em;
+    height: 12.5vh;
+}
+
+.footer-logo-name {
+    color: #ECECEC;
+    font-weight: 900;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+}
