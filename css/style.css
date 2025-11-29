@@ -86,7 +86,7 @@ h1, h3, p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 30%;
     color: white;
     font-size: 0.5em;
@@ -96,6 +96,7 @@ h1, h3, p {
     padding: 0 0 1em 2em;
     gap: 6px;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .article-title {
@@ -187,3 +188,31 @@ h1, h3, p {
 .footer-copyright {
     color: #D7D7D7;
 }
+
+
+
+/* @media (min-width: 400px) {
+    .articles-section {
+        margin: 2em;
+    }
+} */
+
+
+/***************************************************/
+                /* Larger mobiles / tablets */
+/*****************************************************/
+
+
+/* 
+@media (min-width: 450px) and (max-width: 500px) {
+    .articles-section {
+        margin: 2em;
+    }
+} */
+
+
+
+
+/***************************************************/
+                    /* Desktop */
+/*****************************************************/
