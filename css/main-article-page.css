@@ -1,0 +1,42 @@
+.main-article {
+    margin: 1em;
+    max-width: 85%;
+}
+
+p {
+    margin: 1em 0;
+}
+
+
+
+.article-date {
+    margin-top: 3em;
+}
+
+.article-text {
+    margin-bottom: 2em;
+}
+
+.mt {
+    margin-top: 2em;
+}
+
+.article-image-hero {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    margin: 1em auto;
+    width: 90%;
+    height: 125px;
+    border-radius: 3px;
+}
+
+
+.articles-section {
+    width: 90%;
+    margin: 1em auto;
+}
+
+section > div {
+    text-align: center;
+}
