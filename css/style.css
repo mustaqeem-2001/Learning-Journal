@@ -1,33 +1,12 @@
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url(../Fonts/source-sans-pro/SourceSansPro-Regular.ttf);
-}
-@font-face {
-    font-family: "Source Sans Pro Semibold";
-    src: url(../Fonts/source-sans-pro/SourceSansPro-Semibold.ttf);
-}
 
-@font-face {
-    font-family: "Roboto Bold";
-    src: url(../Fonts/Roboto/static/Roboto-Bold.ttf)
-}
+/***************************************************
+****************************************************
+***************************************************/
+                /* GLOBAL STYLES */
+/****************************************************
+*****************************************************
+****************************************************/
 
-html, 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Source Sans Pro";
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 0.75em;
-}
-
-h1, h3, p {
-    margin: 0;
-}
 
 
 
@@ -39,39 +18,9 @@ h1, h3, p {
 *****************************************************
 ****************************************************/
 
-.nav {
-    max-width: 90%;
-    margin: 1em auto;
-    display: grid;
-    grid-template-columns: min-content auto 1fr min-content auto;
-    grid-template-areas: "logo logo-name . home about-me";
-    align-items: center;
-    gap: 0.25em;
-    font-family: "Source Sans Pro Semibold", serif;
-}
 
-.nav-left-logo {
-    grid-area: logo;
-}
 
-.nav-left-logo-name {
-    grid-area: logo-name;
-    font-family: "Roboto Bold", "Source Sans Pro Semibold", serif;
-    font-size: 0.9em;
-}
 
-.nav-right-home {
-    grid-area: home;
-    
-}
-
-.nav-right-about-me {
-    grid-area: about-me;
-}
-
-.mr {
-    margin-right: 1em;
-}
 
 /****************************************************
 *****************************************************
@@ -180,24 +129,8 @@ h1, h3, p {
 *****************************************************
 ****************************************************/
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #202020;
-    font-size: 1em;
-    height: 12.5vh;
-}
 
-.footer-logo-name {
-    color: #ECECEC;
-    font-weight: 900;
-}
 
-.footer-copyright {
-    color: #D7D7D7;
-}
 
 
 
@@ -215,9 +148,6 @@ h1, h3, p {
         max-width: 80%;
     }
     
-    .footer {
-        font-size: 1em;
-    }
 }
 
 
@@ -228,12 +158,6 @@ h1, h3, p {
 @media (min-width: 768px) {
     .articles-section  {
         max-width: 60%;
-    }
-    .nav-right, .nav-left-logo-name {
-        font-size: 1em;
-    }
-    .mr {
-        margin-right: 5em;
     }
 }
 
