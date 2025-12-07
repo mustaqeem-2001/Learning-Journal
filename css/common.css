@@ -86,6 +86,67 @@ h1, h3, p, img {
 
 
 
+/*****************************************************/
+                    /* Articles */
+/*****************************************************/
+
+.articles-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "blog-one"
+    "blog-two"
+    "blog-three";
+    gap: 12px;
+    max-width: 90%;
+    margin: 1.5em auto;
+}
+
+.blog-one {
+    grid-area: blog-one;
+}
+
+.blog-two {
+    grid-area: blog-two;
+}
+
+.blog-three {
+    grid-area: blog-three;
+}
+
+
+
+.extra-articles {
+    margin-bottom: 2em;
+}
+
+.extra-articles > p, .extra-articles > h3, .extra-articles > img {
+    margin-bottom: 0.5em;
+}
+
+.extra-article-image {
+    width: 100%;
+}
+
+.fc-505050 {
+    color: #505050;
+}
+
+.extra-articles > h3 {
+    color: #141414;
+    font-weight: 900;
+}
+
+
+.view-more {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
 
 /****************************************************
 *****************************************************
@@ -127,6 +188,17 @@ h1, h3, p, img {
 /*****************************************************/
 
 @media (min-width: 480px) {
+
+    .main-article {
+        font-size: 0.75em;
+        margin: 0 auto;
+    }
+
+    .articles-section  {
+        margin-top: 2em;
+        max-width: 80%;
+    }
+    
     .footer {
         font-size: 1em;
     }
@@ -145,6 +217,10 @@ h1, h3, p, img {
     .mr {
         margin-right: 5em;
     }
+
+    .articles-section  {
+        max-width: 60%;
+    }
 }
 
 
@@ -154,3 +230,28 @@ h1, h3, p, img {
 /***************************************************/
                     /* Desktop */
 /*****************************************************/
+
+
+@media (min-width: 1024px) {
+    .main-article {
+        font-size: 1em;
+    }
+
+    .articles-section  {
+        max-width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;        
+        grid-template-areas: 
+        "blog-one blog-two blog-three";
+        gap: 25px;
+    }
+
+}
+
+/***************************************************/
+                /* Large Desktop */
+/*****************************************************/
+
+
+@media (min-width: 1400px) {
+
+}

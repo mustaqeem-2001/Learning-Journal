@@ -1,21 +1,4 @@
 import { articleArray } from "./data.js";
-console.log(articleArray[0].image);
-
-
-const articlesSectionEl = document.getElementById("articlesSectionEl");
-const viewMoreEl = document.getElementById("viewMoreEl");
-
-
-
-viewMoreEl.addEventListener("click", function() {
-    const htmlOutput = generateHTML();
-    viewMore(htmlOutput);
-})
-
-
-function viewMore(htmlOutput) {
-    articlesSectionEl.innerHTML = htmlOutput.join("");
-}
 
 
 // Instead of doing let htmlOutput = []; globally (which is not advised to do), 
@@ -36,10 +19,12 @@ function generateHTML() {
     return htmlOutput;
 }
 
-function render(htmlOutput) {
-    articlesSectionEl.innerHTML = htmlOutput.slice(0, 3).join("");
+
+export function viewMore(htmlOutput = generateHTML()) {
+    return htmlOutput.join("");
 }
 
-const htmlOutput = generateHTML();
-render(htmlOutput);
 
+export function render(htmlOutput = generateHTML()) {
+    return htmlOutput.slice(0, 3).join("");
+}
