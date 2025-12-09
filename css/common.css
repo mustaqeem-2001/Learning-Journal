@@ -90,6 +90,13 @@ h1, h3, p, img {
                     /* Articles */
 /*****************************************************/
 
+
+.rp-wrapper {
+    text-align: center;
+}
+
+
+
 .articles-section {
     display: grid;
     grid-template-columns: 1fr;

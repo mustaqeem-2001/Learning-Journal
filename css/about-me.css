@@ -1,0 +1,104 @@
+.grid-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "gface"
+    "gpt"
+    "gpd";
+    gap: 1em;
+    margin: 2em;
+}
+
+.grid-face {
+    grid-area: gface;
+}
+
+.grid-profile-title {
+    grid-area: gpt;
+}
+
+.grid-profile-description {
+    grid-area: gpd;
+}
+
+.lh {
+    margin: 1rem 2rem;
+}
+
+.mb {
+    margin-bottom: 3em;
+}
+
+
+
+
+/***************************************************/
+                    /* Desktop */
+/*****************************************************/
+
+
+@media (min-width: 1024px) {
+    .grid-profile {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: max-content 1fr;
+        grid-template-areas: 
+        "gface gpt"
+        "gface gpd";
+        gap: 1em;
+        max-width: 80%;
+        margin: 5em auto 0;
+    }
+    .grid-profile-title {
+        margin-top: .5em;
+    }
+
+    .about-me-description {
+        max-width: 80%;
+        margin: auto;
+    }
+
+}
+
+
+
+/***************************************************/
+                /* Large Desktop */
+/*****************************************************/
+
+
+@media (min-width: 1400px) {
+    .grid-profile {
+        max-width: 80%;
+        margin: 5em auto;
+    }
+
+     .grid-profile-title {
+        font-size: 2em;
+        align-self: flex-end;
+    }
+
+    .grid-profile-description {
+        font-size: 1.25em;
+        align-self: flex-start;
+    }
+
+}
+
+
+@media (min-width: 2000px) {
+
+    .grid-profile-title {
+        font-size: 3em;
+    }
+    .grid-profile-description {
+        font-size: 2em;
+    }
+
+    .about-me-description > p {
+        font-size: 2em;
+    }
+
+     .about-me-description > h3 {
+        font-size: 2.5em;
+    }
+}
