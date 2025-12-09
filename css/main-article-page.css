@@ -78,14 +78,6 @@ p {
         margin: auto;
     }
 
-    .articles-section  {
-        max-width: 95%;
-        grid-template-columns: 1fr 1fr 1fr;        
-        grid-template-areas: 
-        "blog-one blog-two blog-three";
-        gap: 25px;
-    }
-
      .article-image-hero {
         width: 110%;
         height: 51%;
@@ -97,7 +89,7 @@ p {
     } 
 
     .rp-wrapper {
-        margin-top: 15em;
+        margin-top: 5em;
     }
 }
 

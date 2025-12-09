@@ -64,18 +64,6 @@
                     /* Articles */
 /*****************************************************/
 
-.articles-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "blog-one"
-    "blog-two"
-    "blog-three";
-    gap: 12px;
-    max-width: 90%;
-    margin: 1.5em auto;
-}
-
 .blog-one {
     grid-area: blog-one;
 }
@@ -153,15 +141,7 @@
         max-width: 60%;
         padding-bottom: 2em;
     }
-
-    .articles-section  {
-        max-width: 95%;
-        grid-template-columns: 1fr 1fr 1fr;        
-        grid-template-areas: 
-        "blog-one blog-two blog-three";
-        gap: 25px;
-    }
-
+    
 }
 
 @media (min-width: 1400px) {
