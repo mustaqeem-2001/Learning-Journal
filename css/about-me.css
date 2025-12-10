@@ -11,6 +11,7 @@
 
 .grid-face {
     grid-area: gface;
+    width: 182px;
 }
 
 .grid-profile-title {
